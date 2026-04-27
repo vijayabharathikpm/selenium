@@ -1,0 +1,18 @@
+<suite name="Regression Suite" parallel="tests" thread-count="2">
+
+    <test name="Regression Tests">
+
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="CampaignTest"/>
+            <class name="CampaignwithexpecteddateTest"/>
+        </classes>
+
+    </test>
+
+</suite>

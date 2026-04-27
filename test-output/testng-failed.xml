@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Test Suite]">
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="baseClass.CampaignwithexpectedateTest">
+        <methods>
+          <include name="afterclass"/>
+          <include name="BeforeMethod"/>
+          <include name="beforesuit"/>
+          <include name="beforeclass"/>
+          <include name="toCreateCampaignWithExpDateTest"/>
+          <include name="aftersuit"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- baseClass.CampaignwithexpectedateTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="baseClass.CampaignTest">
+        <methods>
+          <include name="afterclass"/>
+          <include name="BeforeMethod"/>
+          <include name="toCreateCampaignWithMandatoryFieldsTest"/>
+          <include name="beforesuit"/>
+          <include name="beforeclass"/>
+          <include name="aftersuit"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- baseClass.CampaignTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->
